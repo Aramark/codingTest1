@@ -28,6 +28,24 @@ class AutoCompleteUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testSearchPopulatesTableRowsWithResults(){
+        let app = XCUIApplication()
+        
+        let textField = app.otherElements.containing(.staticText, identifier:"What are you looking for?").children(matching: .textField).element
+        
+        textField.tap()
+        
+        textField.typeText("Book")
+        
+        app.buttons["Search"].tap()
+        
+        let predicate = NSPredicate(format: "label CONTAINS[c] %@", "Book")
+        
+        let elementQuery = app.staticTexts.containing(predicate)
+        
+        XCTAssert(elementQuery.count == 3)
+    }
+    
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
