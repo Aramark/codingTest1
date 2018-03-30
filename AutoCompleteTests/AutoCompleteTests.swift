@@ -21,6 +21,18 @@ class AutoCompleteTests: XCTestCase {
         super.tearDown()
     }
     
+    func testGetAll(){
+        let mockAnimalRepo = MockAnimalRepository()
+        mockAnimalRepo.write(model: Animal(name: "Giraffe"))
+        
+        let useCase = LoadAnimalNames()
+        useCase.animalRepository = mockAnimalRepo
+        
+        let repoContent = mockAnimalRepo.getAll()
+        XCTAssert(repoContent.count == 1)
+        XCTAssert(repoContent[0].name == "Giraffe")
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048C9097206ECE2500932128 /* MockAnimalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C9095206ECDEF00932128 /* MockAnimalRepository.swift */; };
 		6625A63A202FA59E0066EF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625A639202FA59E0066EF35 /* AppDelegate.swift */; };
 		6625A63C202FA59E0066EF35 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625A63B202FA59E0066EF35 /* HomeScreenViewController.swift */; };
 		6625A63F202FA59E0066EF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6625A63D202FA59E0066EF35 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		048C9095206ECDEF00932128 /* MockAnimalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimalRepository.swift; sourceTree = "<group>"; };
 		6625A636202FA59E0066EF35 /* AutoComplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoComplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6625A639202FA59E0066EF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6625A63B202FA59E0066EF35 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				6625A64E202FA59E0066EF35 /* AutoCompleteTests.swift */,
 				6625A650202FA59E0066EF35 /* Info.plist */,
+				048C9095206ECDEF00932128 /* MockAnimalRepository.swift */,
 			);
 			path = AutoCompleteTests;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				6625A673202FB65D0066EF35 /* DataReader.swift in Sources */,
 				6625A671202FAD430066EF35 /* DataModel.swift in Sources */,
 				6625A680202FBC200066EF35 /* BaseRepository.swift in Sources */,
+				048C9097206ECE2500932128 /* MockAnimalRepository.swift in Sources */,
 				6625A67E202FBC140066EF35 /* AnimalRepository.swift in Sources */,
 				6625A68F203A5CF10066EF35 /* AnimalViewModel.swift in Sources */,
 				6625A63C202FA59E0066EF35 /* HomeScreenViewController.swift in Sources */,

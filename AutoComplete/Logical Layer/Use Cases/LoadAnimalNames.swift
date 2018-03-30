@@ -2,7 +2,7 @@ import Foundation
 import RxSwift
 
 class LoadAnimalNames: BaseUseCase {
-    let animalRepository: AnimalRepository = AppDelegate.instance.animalRepository
+     lazy var animalRepository: AnimalRepository = AppDelegate.instance.animalRepository
     
     func execute() -> Observable<Bool> {
         return Observable<Bool>.create { o in
